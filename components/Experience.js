@@ -26,7 +26,7 @@ const Experience = () => {
           <div className="mb-2">
             <div className="cursor-pointer bg-gray-800 p-4 flex justify-between items-center shadow-lg" onClick={(e) => toggleExperienceTab(1, e)}>
               <div className="flex items-center">
-                <Image src="/starstock/starstock.png" alt="StarStock" width={50} height={50} />
+                <Image src="/starstock/starstock.png" alt="StarStock" width={100} height={100} />
                 <h2 className="ml-4 font-semibold text-gray-300">StarStock - Mamaroneck, NY</h2>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Experience = () => {
           <div className="mb-2">
             <div className="cursor-pointer bg-gray-800 p-4 flex justify-between items-center shadow-lg" onClick={(e) => toggleExperienceTab(2, e)}>
               <div className="flex items-center">
-                <Image src="/bcc/bitcreatorcapital.png" alt="BCC" width={50} height={50} />
+                <Image src="/bcc/bitcreatorcapital.png" alt="BCC" width={100} height={100} />
                 <h2 className="ml-4 font-semibold text-gray-300">BitCreator Capital - New York, NY</h2>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Experience = () => {
           <div className="mb-2">
             <div className="cursor-pointer bg-gray-800 p-4 flex justify-between items-center shadow-lg" onClick={(e) => toggleExperienceTab(3, e)}>
               <div className="flex items-center">
-                <Image src="/bcc/flickapp.png" alt="Flick" width={50} height={50} />
+                <Image src="/bcc/flickapp.png" alt="Flick" width={100} height={100} />
                 <h2 className="ml-4 font-semibold text-gray-300">Flick App - New York, NY</h2>
               </div>
             </div>
