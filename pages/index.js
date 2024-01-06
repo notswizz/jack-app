@@ -1,32 +1,29 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import About from '../components/About';
-import Experience from '../components/Experience';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+// pages/index.js
+import React, { useState } from 'react';
+import Header from '../components/Header'
+import StarStockListing from '../components/StarStock/StarStockListing';
+import StarStockModal from '../components/StarStock/StarStockModal';
 
+const Home = () => {
+  const [isStarStockModalOpen, setStarStockModalOpen] = useState(false);
 
-
-
-export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Head>
-        <title>Jack Smith's Resume</title>
-        <meta name="description" content="Jack Smith's Professional Resume" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <Header />
-      <main>
-        <About />
-        <Projects />
-        <Experience />
-      
-     
-      </main>
-      <Footer />
+    <div className="min-h-screen bg-gray-900 text-white">
+      <Header/>
+      <div className="container mx-auto py-10">
+        <h1 className="text-4xl font-bold text-center mb-10">My Experiences</h1>
+        {/* StarStock Experience Listing and Modal */}
+        <div className="mb-5">
+          <StarStockListing onClick={() => setStarStockModalOpen(true)} />
+          <StarStockModal isOpen={isStarStockModalOpen} onClose={() => setStarStockModalOpen(false)} />
+        </div>
+        
+        {/* ... You can add more experience listings and modals here ... */}
+
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
