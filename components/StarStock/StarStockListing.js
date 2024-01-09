@@ -22,7 +22,7 @@ const StarStockListing = ({ onClick }) => {
       </div>
      
       <div className="flex-none text-right space-y-2">
-        <div className="text-sm text-gray-500">Mamaroneck, NY</div>
+        <div className="text-sm text-white-500">Mamaroneck, NY</div>
         <div className="text-xs text-gray-500">Location</div>
       </div>
     </div>

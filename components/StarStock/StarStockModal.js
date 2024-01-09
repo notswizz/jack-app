@@ -21,7 +21,7 @@ const StarStockModal = ({ isOpen, onClose }) => {
         <li>Assisted customers with inquiries, complaints, and returns.</li>
         <li>Processed payments, refunds, and other financial transactions.</li>
       </ul>
-      <div className="mt-4">
+      <div className="mt-4 flex justify-between items-center">
         <a href="https://starstock.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500">Visit StarStock</a>
         <button onClick={onClose} className="ml-4 bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Close</button>
       </div>
