@@ -13,20 +13,23 @@ const StarStockListing = ({ onClick }) => {
         <p className="text-lg text-white">Product Manager</p>
       </div>
       <div className="flex-none text-right space-y-2">
-        <div className="text-sm text-white-500">Jan 2021</div>
+        {/* Example Start Date Ring Badge */}
+        <div className="ring-2 ring-blue-500 text-blue-400 py-1 px-3 rounded-full text-sm">Jan 2021</div>
         <div className="text-xs text-gray-500">Start Date</div>
       </div>
       <div className="flex-none text-right space-y-2">
-        <div className="text-sm text-white-500">May 2022</div>
+        {/* Example End Date Ring Badge */}
+        <div className="ring-2 ring-blue-500 text-blue-400 py-1 px-3 rounded-full text-sm">May 2022</div>
         <div className="text-xs text-gray-500">End Date</div>
       </div>
-     
       <div className="flex-none text-right space-y-2">
-        <div className="text-sm text-white-500">Mamaroneck, NY</div>
+        {/* Location Filled Badge */}
+        <div className="bg-blue-500 text-black py-1 px-3 rounded-full text-sm">Mamaroneck, NY</div>
         <div className="text-xs text-gray-500">Location</div>
       </div>
     </div>
   );
+  
 };
 
 export default StarStockListing;

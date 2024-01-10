@@ -6,9 +6,10 @@ const Header = () => {
     <header className="bg-black body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a href="#about" className="mr-5 text-neon hover:text-gray-300">About</a>
+        <a href="#experience" className="mr-5 text-neon hover:text-gray-300">404-536-7803</a>
+          <a href="#about" className="mr-5 text-neon hover:text-gray-300">Jack Smith</a>
        
-          <a href="#experience" className="mr-5 text-neon hover:text-gray-300">Experience</a>
+       
         
           <FaStar className="text-neon mr-3" />
           <FaSearch className="text-neon mr-3" />

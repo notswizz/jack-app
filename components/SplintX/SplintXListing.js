@@ -13,22 +13,23 @@ const SplintXListing = ({ onClick }) => {
         {/* Additional text can be added here */}
       </div>
       <div className="flex-none text-right space-y-2">
-        {/* Adjust with the actual start date */}
-        <div className="text-sm text-white-500">Feb 2021</div>
+        {/* Example Start Date Ring Badge */}
+        <div className="ring-2 ring-yellow-500 text-yellow-400 py-1 px-3 rounded-full text-sm">Feb 2021</div>
         <div className="text-xs text-gray-500">Start Date</div>
       </div>
       <div className="flex-none text-right space-y-2">
-        {/* Adjust with the actual end date */}
-        <div className="text-sm text-white-500">Dec 2022</div>
+        {/* Example End Date Ring Badge */}
+        <div className="ring-2 ring-yellow-500 text-yellow-400 py-1 px-3 rounded-full text-sm">Dec 2022</div>
         <div className="text-xs text-gray-500">End Date</div>
       </div>
       <div className="flex-none text-right space-y-2">
-        {/* Include the location here */}
-        <div className="text-sm text-white-500">New York, NY</div>
+        {/* Location Filled Badge */}
+        <div className="bg-yellow-500 text-black py-1 px-3 rounded-full text-sm">Atlanta, GA</div>
         <div className="text-xs text-gray-500">Location</div>
       </div>
     </div>
   );
+  
 };
 
 export default SplintXListing;
