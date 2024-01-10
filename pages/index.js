@@ -1,6 +1,7 @@
 // pages/index.js
 import React, { useState } from 'react';
 import Header from '../components/Header'
+import Footer from '@/components/Footer';
 import StarStockListing from '../components/StarStock/StarStockListing';
 import StarStockModal from '../components/StarStock/StarStockModal';
 import BitCreatorCapitalListing from '../components/BCC/BCCListing';
@@ -11,6 +12,9 @@ import SplintXListing from '../components/SplintX/SplintXListing';
 import SplintXModal from '../components/SplintX/SplintXModal';
 import NMListing from '../components/NM/NMListing';
 import NMModal from '../components/NM/NMModal';
+import SplinterlandsListing from '../components/Splinterlands/SplinterlandsListing';
+import SplinterlandsModal from '../components/Splinterlands/SplinterlandsModal';
+
 
 
 const Home = () => {
@@ -19,6 +23,7 @@ const Home = () => {
   const [isFlickAppModalOpen, setFlickAppModalOpen] = useState(false);
   const [isSplintXModalOpen, setSplintXModalOpen] = useState(false);
   const [isNMModalOpen, setNMModalOpen] = useState(false);
+  const [isSplinterlandsModalOpen, setSplinterlandsModalOpen] = useState(false);
   
 
   return (
@@ -65,9 +70,18 @@ const Home = () => {
             <SplintXModal isOpen={isSplintXModalOpen} onClose={() => setSplintXModalOpen(false)} />
           </div>
 
+           {/* Splinterlands Listing and Modal */}
+      <div>
+            <SplinterlandsListing onClick={() => setSplinterlandsModalOpen(true)} />
+            <SplinterlandsModal isOpen={isSplinterlandsModalOpen} onClose={() => setSplinterlandsModalOpen(false)} />
+          </div>
+
+
+
           {/* ... More experience listings and modals can be added here ... */}
         </div>
       </div>
+      <Footer/>
     </div>
   );
   
