@@ -27,7 +27,7 @@ const StarStockModal = ({ isOpen, onClose }) => {
         <ul className="list-disc list-inside text-base space-y-2">
           <li>Provided customer support and handled finance-related tasks at StarStock.</li>
           <li>Assisted customers with inquiries, complaints, and returns.</li>
-          <li>Processed payments, refunds, and other financial transactions.</li>
+          <li>Integrated crypto deposits and withdrawals with Coinbase Commerce</li>
         </ul>
         <div className="mt-4 flex justify-between items-center">
           <a href="https://starstock.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500">Visit StarStock</a>

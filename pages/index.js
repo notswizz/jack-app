@@ -14,6 +14,7 @@ import NMListing from '../components/NM/NMListing';
 import NMModal from '../components/NM/NMModal';
 import SplinterlandsListing from '../components/Splinterlands/SplinterlandsListing';
 import SplinterlandsModal from '../components/Splinterlands/SplinterlandsModal';
+import Jack from '../components/Jack/Jack';
 
 
 
@@ -29,13 +30,16 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />
-      <div className="container mx-auto py-4">
-        <h1 className="text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out shadow-lg">
-          My Experiences
-        </h1>
+      <div className="container mx-auto py-4"> {/* Reduced vertical padding of container */}
+      <Jack/>
+      <h1 className="text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out shadow-lg">
+  My Experiences
+</h1>
+
+
 
         {/* Use a grid layout to display listings more compactly */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4"> {/* Reduced gap between grid items */}
 
          {/* NM  Components */}
          <div>
@@ -76,11 +80,14 @@ const Home = () => {
             <SplinterlandsModal isOpen={isSplinterlandsModalOpen} onClose={() => setSplinterlandsModalOpen(false)} />
           </div>
 
+       
 
 
           {/* ... More experience listings and modals can be added here ... */}
         </div>
+        
       </div>
+      
       <Footer/>
     </div>
   );
