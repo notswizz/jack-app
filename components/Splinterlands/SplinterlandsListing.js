@@ -14,12 +14,12 @@ const SplinterlandsListing = ({ onClick }) => {
       </div>
       <div className="flex-none text-right space-y-2">
         {/* Example Start Date Ring Badge */}
-        <div className="ring-2 ring-yellow-500 text-yellow-400 py-1 px-3 rounded-full text-sm">Feb 2021</div>
+        <div className="ring-2 ring-yellow-500 text-yellow-400 py-1 px-3 rounded-full text-sm">Aug 2020</div>
         <div className="text-xs text-gray-500">Start Date</div>
       </div>
       <div className="flex-none text-right space-y-2">
         {/* Example End Date Ring Badge */}
-        <div className="ring-2 ring-yellow-500 text-yellow-400 py-1 px-3 rounded-full text-sm">Dec 2022</div>
+        <div className="ring-2 ring-yellow-500 text-yellow-400 py-1 px-3 rounded-full text-sm">Jan 2021</div>
         <div className="text-xs text-gray-500">End Date</div>
       </div>
       <div className="flex-none text-right space-y-2">

@@ -6,12 +6,13 @@ const Letter = () => {
 
   return (
     <>
-      <button
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300"
-        onClick={() => setIsOpen(true)}
-      >
-        Cover Letter
-      </button>
+  <button
+  className="px-6 py-3 bg-blue-500 text-white text-lg font-semibold rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+  onClick={() => setIsOpen(true)}
+>
+  Cover Letter
+</button>
+
 
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
