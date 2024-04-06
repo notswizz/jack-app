@@ -1,6 +1,5 @@
-// pages/index.js
-import React, { useState } from 'react';
-import Header from '../components/Header'
+import React, { useState, useEffect } from 'react';
+import Header from '../components/Header';
 import Footer from '@/components/Footer';
 import StarStockListing from '../components/StarStock/StarStockListing';
 import StarStockModal from '../components/StarStock/StarStockModal';
@@ -15,8 +14,8 @@ import NMModal from '../components/NM/NMModal';
 import SplinterlandsListing from '../components/Splinterlands/SplinterlandsListing';
 import SplinterlandsModal from '../components/Splinterlands/SplinterlandsModal';
 import Jack from '../components/Jack/Jack';
-
-
+import Jackx from '../components/Jack/0xJack';
+import Projects from '../components/Projects/Projects';
 
 const Home = () => {
   const [isStarStockModalOpen, setStarStockModalOpen] = useState(false);
@@ -26,73 +25,76 @@ const Home = () => {
   const [isNMModalOpen, setNMModalOpen] = useState(false);
   const [isSplinterlandsModalOpen, setSplinterlandsModalOpen] = useState(false);
   
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <div className="flex justify-center items-center h-screen bg-gray-900 text-white">
+        <div className="text-center">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-bold p-5 bg-red-600 rounded-md shadow-lg">
+            Please view on desktop
+          </h2>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />
-      <div className="container mx-auto py-4"> {/* Reduced vertical padding of container */}
-      <Jack/>
-      <h1 className="text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out shadow-lg">
-  My Experiences
-</h1>
-
-
-
-        {/* Use a grid layout to display listings more compactly */}
-        <div className="grid grid-cols-1 gap-4"> {/* Reduced gap between grid items */}
-
-         {/* NM  Components */}
-         <div>
+      <div className="container mx-auto py-2">
+        <Jack />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-orange-500 transition duration-500 ease-in-out shadow-2xl">
+          Experiences
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
+          <div>
             <NMListing onClick={() => setNMModalOpen(true)} />
             <NMModal isOpen={isNMModalOpen} onClose={() => setNMModalOpen(false)} />
           </div>
-
-        {/* BitCreator Capital Listing and Modal */}
-        <div>
+          <div>
             <BitCreatorCapitalListing onClick={() => setBitCreatorCapitalModalOpen(true)} />
             <BitCreatorCapitalModal isOpen={isBitCreatorCapitalModalOpen} onClose={() => setBitCreatorCapitalModalOpen(false)} />
           </div>
-          
-          
-          {/* StarStock Experience Listing and Modal */}
           <div>
             <StarStockListing onClick={() => setStarStockModalOpen(true)} />
             <StarStockModal isOpen={isStarStockModalOpen} onClose={() => setStarStockModalOpen(false)} />
           </div>
-  
-        
-  
-          {/* Flick App Components */}
           <div>
             <FlickAppListing onClick={() => setFlickAppModalOpen(true)} />
             <FlickAppModal isOpen={isFlickAppModalOpen} onClose={() => setFlickAppModalOpen(false)} />
           </div>
-  
-      {/* SplintX Listing and Modal */}
-      <div>
+          <div>
             <SplintXListing onClick={() => setSplintXModalOpen(true)} />
             <SplintXModal isOpen={isSplintXModalOpen} onClose={() => setSplintXModalOpen(false)} />
           </div>
-
-           {/* Splinterlands Listing and Modal */}
-      <div>
+          <div>
             <SplinterlandsListing onClick={() => setSplinterlandsModalOpen(true)} />
             <SplinterlandsModal isOpen={isSplinterlandsModalOpen} onClose={() => setSplinterlandsModalOpen(false)} />
           </div>
-
-       
-
-
           {/* ... More experience listings and modals can be added here ... */}
         </div>
-        
+        <Jackx/>
+        <Projects/>
       </div>
-      
-      <Footer/>
+      <Footer />
     </div>
   );
-  
-  
 };
 
 export default Home;
