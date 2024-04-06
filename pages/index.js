@@ -63,10 +63,11 @@ const Home = () => {
       <div className="container mx-auto py-2">
   
         <Jack />
-        <Letter/>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-orange-500 transition duration-500 ease-in-out shadow-2xl">
-          Experiences
-        </h1>
+  
+        <h1 className="mt-12 text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-orange-500 transition duration-500 ease-in-out shadow-2xl">
+  Experiences
+</h1>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
           <div>
             <NMListing onClick={() => setNMModalOpen(true)} />
@@ -94,6 +95,7 @@ const Home = () => {
           </div>
           {/* ... More experience listings and modals can be added here ... */}
         </div>
+        <Letter/>
         <Jackx/>
         <Projects/>
       </div>

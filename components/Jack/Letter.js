@@ -6,19 +6,20 @@ const Letter = () => {
 
   return (
     <>
-  <button
-  className="px-6 py-3 bg-blue-500 text-white text-lg font-semibold rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
+<button
+  className="mt-12 px-6 py-3 bg-blue-500 text-white text-lg font-semibold rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
   onClick={() => setIsOpen(true)}
 >
   Cover Letter
 </button>
 
 
+
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
         <div className="fixed inset-0 flex items-center justify-center p-4">
         <Dialog.Panel className="mx-auto max-w-2xl rounded-lg bg-white p-8 text-gray-900 shadow-xl">
-  <Dialog.Title className="text-2xl font-bold mb-4">Cover Letter</Dialog.Title>
+  <Dialog.Title className="text-2xl font-bold mb-4">Jack Smith Coinbase Cover Letter</Dialog.Title>
   <Dialog.Description className="space-y-4 text-lg">
     <p>Dear Hiring Manager,</p>
     <p>I am eager to express my enthusiasm for the Crypto Intelligence & Growth Associate position at Coinbase. My extensive background in DeFi, NFTs, DAOs, and Web3, coupled with my insatiable curiosity and passion for innovation, positions me as an exemplary candidate. I am deeply committed to staying at the cutting edge of this transformative paradigm, and I am confident that my unique blend of expertise and dedication will make a significant contribution to the Coinbase team.</p>
