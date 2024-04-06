@@ -15,7 +15,9 @@ import SplinterlandsListing from '../components/Splinterlands/SplinterlandsListi
 import SplinterlandsModal from '../components/Splinterlands/SplinterlandsModal';
 import Jack from '../components/Jack/Jack';
 import Jackx from '../components/Jack/0xJack';
+
 import Projects from '../components/Projects/Projects';
+import Letter from '../components/Jack/Letter';
 
 const Home = () => {
   const [isStarStockModalOpen, setStarStockModalOpen] = useState(false);
@@ -47,7 +49,7 @@ const Home = () => {
       <div className="flex justify-center items-center h-screen bg-gray-900 text-white">
         <div className="text-center">
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold p-5 bg-red-600 rounded-md shadow-lg">
-            Please view on desktop
+            Please view on desktop :)
           </h2>
         </div>
       </div>
@@ -57,8 +59,11 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <Header />
+      
       <div className="container mx-auto py-2">
+  
         <Jack />
+        <Letter/>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 hover:from-pink-500 hover:to-orange-500 transition duration-500 ease-in-out shadow-2xl">
           Experiences
         </h1>
