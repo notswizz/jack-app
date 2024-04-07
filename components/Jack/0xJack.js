@@ -1,16 +1,16 @@
 import React from 'react';
 
 const Jackx = () => {
-  // Data based on the image's content
+  // Updated data with new 'GambleFi' category
   const categories = {
-   
     Chains: ['Base', 'Degen', 'Zora', 'Blast'],
     NFTs: ['NBA Top Shot', 'MLB Champions', 'Paragon', 'Vault'],
     DAOs: ['Aragon', 'Irene', 'Party', 'QPQ'],
     Airdrops: ['Uniswap', 'dYdX', 'ENS', 'Wormhole'],
     Games: ['Splinterlands', 'Wolf Game', 'Crypto - The Game', 'Upland', 'Farm Farmer'],
     SocialFi: ['Farcaster', 'DeSo (Bitclout)', 'Hive (Steem)', 'Friend Tech', 'Lens'],
-    Followers: ['andy8052', '0xraceralt', 'mikerainbow', 'DylanAbruscato', 'jacksettleman']
+    Followers: ['andy8052', '0xraceralt', 'mikerainbow', 'DylanAbruscato', 'jacksettleman'],
+    GambleFi: ['Setoros', 'IKB', 'Rollbit', 'Proof of Weak Hands', 'Bracket Game'], // New category
   };
 
   // Render the categories and items

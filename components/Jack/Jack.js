@@ -45,12 +45,13 @@ const Jack = () => {
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
   <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
   <div className="fixed inset-0 flex items-center justify-center p-4">
-    <Dialog.Panel className="mx-auto max-w-2xl rounded-xl bg-white p-8 text-gray-900 shadow-2xl border border-gray-200">
+    <Dialog.Panel className="mx-auto max-w-2xl h-[80vh] overflow-y-auto rounded-xl bg-white p-8 text-gray-900 shadow-2xl border border-gray-200">
       <Dialog.Title className="text-3xl font-bold mb-6">Jack Smith Coinbase Cover Letter</Dialog.Title>
       <Dialog.Description className="space-y-4 text-lg leading-relaxed">
-        <p>Dear Hiring Manager,</p>
-        <p>I am eager to express my enthusiasm for the Crypto Intelligence & Growth Associate position at Coinbase. My extensive background in DeFi, NFTs, DAOs, and Web3, coupled with my insatiable curiosity and passion for innovation, positions me as an exemplary candidate. I am deeply committed to staying at the cutting edge of this transformative paradigm, and I am confident that my unique blend of expertise and dedication will make a significant contribution to the Coinbase team.</p>
-        <p>My fascination with cryptocurrency can be traced back to my days immersed in Runescape, where the thrill of purchasing items at a low price and selling them for a profit first captured my imagination. This early exposure to virtual economies sparked a relentless pursuit of online financial opportunities. The concept of a permissionless, frictionless system resonated with me profoundly, even before I fully grasped its significance.</p>
+        <p>Dear Future Friend,</p>
+        <p>I am eager to express my enthusiasm for the Crypto Intelligence & Growth Associate position at Coinbase. My extensive background in DeFi, NFTs, DAOs, and Web3, coupled with my curiosity and passion for innovation, positions me as an exemplary candidate. I am deeply committed to staying at the cutting edge of this transformative paradigm, and I am confident that my unique blend of expertise and dedication will make a significant contribution to the Coinbase team.</p>
+        <p>My fascination with cryptocurrency can be traced back to my days immersed in Runescape, where the thrill of purchasing items at a low price and selling them for a profit first captured my imagination. This early exposure to virtual economies sparked a pursuit of online financial opportunities. The concept of a permissionless, frictionless system resonated with me profoundly, even before I fully grasped its significance.</p>
+        <p>My tenure at Northwestern Mutual honed my ability to surpass target figures and flourish within a large corporate structure. Concurrently, my experience at StartStock instilled in me a proactive, versatile mindset typical of startup culture. At BitCreator Capital, my understanding of the cryptocurrency ecosystem was evident in my strategic positioning decisions. This diverse background has equipped me with a unique blend of skills, making me well-suited for a dynamic environment like Coinbase.</p>
         <p>Joining Coinbase would be a dream come true and a pinnacle opportunity for me to fully realize my potential. At this point in my career, I cannot envision a more fitting role. I have long admired Brian Armstrong for his leadership in building and maintaining Coinbase, and I resonate with the same energy and vision under Jesse's leadership as Base moves on-chain. I appreciate your consideration and look forward to hearing back from you.</p>
       </Dialog.Description>
       <button
@@ -62,6 +63,7 @@ const Jack = () => {
     </Dialog.Panel>
   </div>
 </Dialog>
+
 
     </div>
   );

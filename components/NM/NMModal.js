@@ -13,12 +13,12 @@ const NMModal = ({ isOpen, onClose }) => {
         </button>
       </div>
       <div className="text-center mb-6">
-        <h3 className="text-lg font-semibold text-orange-400">Northwestern Mutual - Financial Advisor</h3>
+        <h3 className="text-lg font-semibold text-orange-400">Financial Advisor</h3>
       </div>
       <ul className="list-disc list-inside text-base space-y-2">
-        <li>Passed the New York Life and Health Insurance Exam.</li>
-        <li>Completed Northwestern Mutual's training program.</li>
-        <li>Assisted clients in achieving their financial dreams by providing tailored financial advice and strategies.</li>
+        <li>Successfully obtained New York Life and Heath Insurance license</li>
+        <li>Graduated Northwestern Mutual’s renowned training program</li>
+        <li>Developed comprehensive financial plans for clients</li>
       </ul>
     </div>
   );

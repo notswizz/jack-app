@@ -13,12 +13,12 @@ const SplintXModal = ({ isOpen, onClose }) => {
           </button>
         </div>
         <div className="text-center mb-6">
-          <h3 className="text-lg font-semibold text-yellow-400">SplintX - Project Lead</h3>
+          <h3 className="text-lg font-semibold text-yellow-400">Project Lead</h3>
         </div>
         <ul className="list-disc list-inside text-base space-y-2">
-          <li>Built SplintX, an NFT marketplace for the #1 most popular blockchain game in the world, Splinterlands.</li>
-          <li>Led a team of 5 college-age developers from around the world.</li>
-          <li>Developed a complete NFT marketplace with buy/sell functionality, price history, and collection value.</li>
+          <li>Built SplintX, an NFT marketplace for the #1 most popular blockchain game in the world, Splinterlands</li>
+          <li>Led a team of 5 college-age developers from around the world</li>
+          <li>Implemented marketing strategy to become profitable and maintain attention</li>
         </ul>
         <div className="mt-4 flex justify-between items-center">
           <a href="https://peakd.com/splinterlands/@splintern/the-splintern-story-how-5-college-students-built-an-nft-marketplace-for-the-1-blockchain-game-in-the-world-or-splintx-com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Read about The Splinterns</a>

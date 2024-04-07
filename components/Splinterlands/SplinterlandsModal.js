@@ -13,12 +13,12 @@ const SplinterlandsModal = ({ isOpen, onClose }) => {
           </button>
         </div>
         <div className="text-center mb-6">
-          <h3 className="text-lg font-semibold text-yellow-400">Splinterlands - Executive Assistant</h3>
+          <h3 className="text-lg font-semibold text-yellow-400">Executive Assistant</h3>
         </div>
         <ul className="list-disc list-inside text-base space-y-2">
           <li>Worked as an executive assistant, reaching out to potential investors and scheduling meetings.</li>
-          <li>Led the Splinterlands tournaments on the platform.</li>
-          <li>Reformed the idea to turn the entire platform into more than just a single game.</li>
+          <li>Facilitated Splinterlands tournaments with total prizes awarded exceeding 1 million USD</li>
+          <li>Managed Twitter and Hive social accounts and moderated Discord</li>
         </ul>
         <div className="mt-4 flex justify-between items-center">
           <a href="https://splinterlands.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Visit Splinterlands</a>

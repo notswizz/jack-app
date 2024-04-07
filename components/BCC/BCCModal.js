@@ -16,9 +16,10 @@ const BitCreatorCapitalModal = ({ isOpen, onClose }) => {
           <h3 className="text-lg font-semibold text-purple-400">Analyst</h3>
         </div>
         <ul className="list-disc list-inside text-base space-y-2">
-          <li>Analyzed potential investment opportunities for BitCreator Capital, a VC fund that invested in projects and creators on the DeSo blockchain.</li>
-          <li>Conducted market research and financial analysis to evaluate the feasibility of investments.</li>
-          <li>Participated in pitch meetings and presentations to potential investors.</li>
+        <li>I was the lead analyst for a 7 figure fund led by Nigel Eccles (Fanduel co-founder)</li>
+          <li>Connected with 30+ founders building on the DesO blockchain to evaluate their agenda for potential investment</li>
+          <li>Built and presented pitch decks of potential investments up to $100,000</li>
+     
         </ul>
         
         <div className="mt-4 flex justify-between items-center">
