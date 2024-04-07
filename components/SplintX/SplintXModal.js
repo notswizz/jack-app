@@ -21,7 +21,7 @@ const SplintXModal = ({ isOpen, onClose }) => {
           <li>Developed a complete NFT marketplace with buy/sell functionality, price history, and collection value.</li>
         </ul>
         <div className="mt-4 flex justify-between items-center">
-          <a href="https://peakd.com/@splintern" target="_blank" rel="noopener noreferrer" className="text-blue-500">Read about The Splinterns</a>
+          <a href="https://peakd.com/splinterlands/@splintern/the-splintern-story-how-5-college-students-built-an-nft-marketplace-for-the-1-blockchain-game-in-the-world-or-splintx-com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Read about The Splinterns</a>
         </div>
       </div>
     );

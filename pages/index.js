@@ -17,7 +17,7 @@ import Jack from '../components/Jack/Jack';
 import Jackx from '../components/Jack/0xJack';
 
 import Projects from '../components/Projects/Projects';
-import Letter from '../components/Jack/Letter';
+
 
 const Home = () => {
   const [isStarStockModalOpen, setStarStockModalOpen] = useState(false);
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
           {/* ... More experience listings and modals can be added here ... */}
         </div>
-        <Letter/>
+   
         <Jackx/>
         <Projects/>
       </div>

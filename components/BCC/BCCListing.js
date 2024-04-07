@@ -13,12 +13,12 @@ const BitCreatorCapitalListing = ({ onClick }) => {
       </div>
       <div className="flex-none text-right space-y-2">
         {/* Example Start Date Ring Badge */}
-        <div className="ring-2 ring-purple-500 text-purple-400 py-1 px-3 rounded-full text-sm">Oct 2021</div>
+        <div className="ring-2 ring-purple-500 text-purple-400 py-1 px-3 rounded-full text-sm">May 2021</div>
         <div className="text-xs text-gray-500">Start Date</div>
       </div>
       <div className="flex-none text-right space-y-2">
         {/* Example End Date Ring Badge */}
-        <div className="ring-2 ring-purple-500 text-purple-400 py-1 px-3 rounded-full text-sm">Dec 2022</div>
+        <div className="ring-2 ring-purple-500 text-purple-400 py-1 px-3 rounded-full text-sm">Mar 2022</div>
         <div className="text-xs text-gray-500">End Date</div>
       </div>
       <div className="flex-none text-right space-y-2">
