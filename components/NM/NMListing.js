@@ -19,7 +19,7 @@ const NMListing = ({ onClick }) => {
       </div>
       <div className="flex-none text-right space-y-2">
         {/* Example End Date Ring Badge */}
-        <div className="ring-2 ring-orange-500 text-orange-400 py-1 px-3 rounded-full text-sm">Sep 2023</div>
+        <div className="ring-2 ring-orange-500 text-orange-400 py-1 px-3 rounded-full text-sm">Feb 2024</div>
         <div className="text-xs text-gray-500">End Date</div>
       </div>
       <div className="flex-none text-right space-y-2">

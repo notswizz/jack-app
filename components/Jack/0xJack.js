@@ -3,16 +3,14 @@ import React from 'react';
 const Jackx = () => {
   // Data based on the image's content
   const categories = {
-    Chains: [
-      'Base', 'Degen', 'Zora', 
-     'Blast', 
-    
-    ],
+   
+    Chains: ['Base', 'Degen', 'Zora', 'Blast'],
     NFTs: ['NBA Top Shot', 'MLB Champions', 'Paragon', 'Vault'],
     DAOs: ['Aragon', 'Irene', 'Party', 'QPQ'],
     Airdrops: ['Uniswap', 'dYdX', 'ENS', 'Wormhole'],
     Games: ['Splinterlands', 'Wolf Game', 'Crypto - The Game', 'Upland', 'Farm Farmer'],
-    SocialFi: ['Farcaster', 'DeSo (Bitclout)', 'Hive (Steem)', 'Friend Tech', 'Lens']
+    SocialFi: ['Farcaster', 'DeSo (Bitclout)', 'Hive (Steem)', 'Friend Tech', 'Lens'],
+    Followers: ['andy8052', '0xraceralt', 'mikerainbow', 'DylanAbruscato', 'jacksettleman']
   };
 
   // Render the categories and items
@@ -31,9 +29,9 @@ const Jackx = () => {
 
   return (
     <div className="bg-gray-900 p-8 rounded-xl shadow-2xl flex flex-wrap justify-center items-start gap-4">
-   <h2 className="text-6xl md:text-7xl lg:text font-extrabold text-white w-full text-center mb-12 shadow-xl tracking-tight leading-none animate-pulse">
-  My Favorite (decentralized) Things
-</h2>
+      <h2 className="text-6xl md:text-7xl lg:text font-extrabold text-white w-full text-center mb-12 shadow-xl tracking-tight leading-none animate-pulse">
+        My Favorite (decentralized) Things
+      </h2>
 
       {Object.keys(categories).map((category, idx) => (
         <div key={category} className={`flex-auto min-w-80 bg-white rounded-2xl shadow-xl overflow-hidden mx-4 my-2 border-4 ${idx % 2 === 0 ? 'border-blue-500' : 'border-green-500'} transform hover:scale-105 transition duration-300 ease-in-out`}>
@@ -49,8 +47,6 @@ const Jackx = () => {
       ))}
     </div>
   );
-  
-  
 };
 
 export default Jackx;

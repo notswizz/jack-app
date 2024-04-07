@@ -6,9 +6,8 @@ const Projects = () => {
     'Zone6.png',
     'flicknyc.png',
     'BCLTjack.png',
-    'niftybball.png',
+    'resumenft.png',
     'ihatedeso.png'
-    
   ];
 
   return (
@@ -17,7 +16,13 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projectImages.map((image, index) => (
           <div key={index} className="overflow-hidden rounded-lg shadow-lg">
-            <img src={`/${image}`} alt={`Project ${index + 1}`} className="w-full" />
+            {image === 'resumenft.png' ? (
+              <a href="https://opensea.io/assets/ethereum/0xd07dc4262bcdbf85190c01c996b4c06a461d2430/82667" target="_blank" rel="noopener noreferrer">
+                <img src={`/${image}`} alt={`Project ${index + 1}`} className="w-full" />
+              </a>
+            ) : (
+              <img src={`/${image}`} alt={`Project ${index + 1}`} className="w-full" />
+            )}
           </div>
         ))}
       </div>
