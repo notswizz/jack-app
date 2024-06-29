@@ -8,9 +8,10 @@ const Jack = () => {
   return (
     <div>
       <div className="text-center py-14 px-2 md:px-12 bg-gradient-to-r from-blue-500 to-blue-700 animate-gradient-x rounded-b-xl">
-        <h1 className="animate-text-wiggle text-2xl md:text-6xl font-extrabold mb-12 tracking-tight text-white">
-          Hi, I'm Jack :)
-        </h1>
+      <h1 className="animate-text-wiggle text-2xl md:text-6xl lg:text-8xl font-extrabold mb-12 tracking-tight text-white shadow-lg">
+  Hi, I'm Jack :)
+</h1>
+
         <div className="flex justify-center items-center gap-8 p-4">
           <div className="flex flex-col items-center">
             <div className="shadow-xl rounded-3xl overflow-hidden border-4 border-black transform transition duration-500 ">
@@ -22,12 +23,7 @@ const Jack = () => {
                 className="object-cover object-center "
               />
             </div>
-            <button
-  className="mt-4 px-6 py-4 bg-white text-blue-700 font-semibold rounded-full shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 border border-blue-700"
-  onClick={() => setIsOpen(true)}
->
-  Read Cover Letter
-</button>
+    
 
           </div>
           <div className="shadow-xl rounded-3xl overflow-hidden border-4 border-black transform transition duration-500 hover:scale-110">
